@@ -28,6 +28,27 @@ body {
     margin-top: .2em;
 }
 
+.project-category {
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.project-info {
+    margin-top: 3em;
+}
+
+.project-info:first-child {
+    margin-top: 1em;
+}
+
+.project-title {
+    font-size: 1.2em;
+}
+
+.project-url {
+    font-size: .8em;
+}
+
 @media screen and (min-width: 525px) {
     .logo {
         width: 100px;
@@ -40,5 +61,30 @@ body {
     .sub-heading {
         font-size: 1.4em;
         margin-top: .4em;
+    }
+
+    .project-category {
+        font-size: 2.2em;
+    }
+
+    .project-title {
+        font-size: 1.8em;
+    }
+
+    .project-url {
+        font-size: 1.1em;
+    }
+
+@media screen and (min-width: 768px) {
+    .project-category {
+        text-align: left;
+    }
+
+    .project-info {
+        margin-top: .8em;
+    }
+
+    .project-info:first-child {
+        margin-top: .8em;
     }
 }

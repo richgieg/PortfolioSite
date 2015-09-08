@@ -14,12 +14,20 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-xs-3">
-                    <img class="title-logo" src="http://placehold.it/100x100" alt="Udacity logo">
+                <div class="col-xs-2">
+                    <picture>
+                        <source media="(max-width: 549px)"
+                            srcset="http://placehold.it/50x50 1x,
+                                    http://placehold.it/100x100 2x">
+                        <source media="(min-width: 550px)"
+                            srcset="http://placehold.it/100x100 1x,
+                                    http://placehold.it/200x200 2x">
+                        <img class="logo" src="http://placehold.it/200x200" alt="">
+                    </picture>
                 </div>
-                <div class="col-xs-9 text-right text-uppercase">
-                    <h1 class="title-super text-thin">Richard Gieg</h1>
-                    <h4>Software Engineer</h4>
+                <div class="col-xs-10 text-right text-uppercase">
+                    <h1 class="main-heading text-thin">Richard Gieg</h1>
+                    <h4 class="sub-heading">Software Engineer</h4>
                 </div>
             </div>
             <div class="row">

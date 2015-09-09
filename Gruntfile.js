@@ -34,8 +34,9 @@ module.exports = function(grunt) {
 
         files: [{
           expand: true,
-          src: ['banner_full.jpg'],
-          cwd: 'images/',
+          src: ['banner_full.{gif,jpg,png}'],
+          cwd: 'images_src/',
+          dest: 'images/'
         }]
       },
 
@@ -63,8 +64,9 @@ module.exports = function(grunt) {
 
         files: [{
           expand: true,
-          src: ['banner_cropped.jpg'],
-          cwd: 'images/',
+          src: ['banner_cropped.{gif,jpg,png}'],
+          cwd: 'images_src/',
+          dest: 'images/'
         }]
       }
     },

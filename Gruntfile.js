@@ -91,6 +91,44 @@ module.exports = function(grunt) {
           cwd: 'images_src/',
           dest: 'images/'
         }]
+      },
+
+      udacity_projects: {
+        options: {
+          engine: 'im',
+          sizes: [{
+            width: 1440,
+            suffix: '_large_2x',
+            quality: 60
+          },{
+            width: 720,
+            suffix: '_large_1x',
+            quality: 60
+          },{
+            width: 956,
+            suffix: '_medium_2x',
+            quality: 60
+          },{
+            width: 478,
+            suffix: '_medium_1x',
+            quality: 60
+          },{
+            width: 720,
+            suffix: '_small_2x',
+            quality: 60
+          },{
+            width: 360,
+            suffix: '_small_1x',
+            quality: 60
+          }]
+        },
+
+        files: [{
+          expand: true,
+          src: ['u_*.{gif,jpg,png}'],
+          cwd: 'images_src/',
+          dest: 'images/'
+        }]
       }
     },
 

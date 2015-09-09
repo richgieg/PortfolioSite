@@ -10,6 +10,29 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     responsive_images: {
+      logo: {
+        options: {
+          engine: 'im',
+          sizes: [{
+            width: 200,
+            quality: 60
+          },{
+            width: 100,
+            quality: 60
+          },{
+            width: 50,
+            quality: 60
+          }]
+        },
+
+        files: [{
+          expand: true,
+          src: ['logo.{gif,jpg,png}'],
+          cwd: 'images_src/',
+          dest: 'images/'
+        }]
+      },
+
       banner_full: {
         options: {
           engine: 'im',

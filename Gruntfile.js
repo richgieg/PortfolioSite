@@ -10,47 +10,61 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     responsive_images: {
-      full: {
+      banner_full: {
         options: {
           engine: 'im',
           sizes: [{
-            width: 800,
-            suffix: '_1x',
-            quality: 30
+            width: 2400,
+            suffix: '_largest_2x',
+            quality: 60
           },{
-            width: 1600,
-            suffix: '_2x',
-            quality: 30
+            width: 1200,
+            suffix: '_largest_1x',
+            quality: 60
+          },{
+            width: 1880,
+            suffix: '_large_2x',
+            quality: 60
+          },{
+            width: 940,
+            suffix: '_large_1x',
+            quality: 60
           }]
         },
 
         files: [{
           expand: true,
-          src: ['*_full.{gif,jpg,png}'],
-          cwd: 'images_src/',
-          dest: 'images/'
+          src: ['banner_full.jpg'],
+          cwd: 'images/',
         }]
       },
 
-      cropped: {
+      banner_cropped: {
         options: {
           engine: 'im',
           sizes: [{
-            width: 500,
-            suffix: '_1x',
-            quality: 30
+            width: 1440,
+            suffix: '_medium_2x',
+            quality: 60
           },{
-            width: 1000,
-            suffix: '_2x',
-            quality: 30
+            width: 720,
+            suffix: '_medium_1x',
+            quality: 60
+          },{
+            width: 956,
+            suffix: '_small_2x',
+            quality: 60
+          },{
+            width: 478,
+            suffix: '_small_1x',
+            quality: 60
           }]
         },
 
         files: [{
           expand: true,
-          src: ['*_cropped.{gif,jpg,png}'],
-          cwd: 'images_src/',
-          dest: 'images/'
+          src: ['banner_cropped.jpg'],
+          cwd: 'images/',
         }]
       }
     },

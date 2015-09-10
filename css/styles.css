@@ -1,43 +1,48 @@
+/* Body and container */
 body {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font: 300 14px "Lato", sans-serif;
     color: gray;
     background-color: #a5bbb7;
 }
 
-a, a:active, a:focus, a:hover, a:visited {
+.container {
+    background-color: #e2e2e2;
+    padding: 0.4em 1.8em 1.8em;
+}
+
+
+/* Header */
+.logo {
+    width: 50px;
+    border-radius: 1em;
+    margin-top: 20px;
+}
+
+.main-heading {
+    font: 400 1.5em "Orbitron", sans-serif;
+    color: black;
+    margin: 1.3em 0 0;
+}
+
+.sub-heading {
+    font-size: 0.9em;
+    color: black;
+    margin-top: 0.2em;
+}
+
+
+/* Content */
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited {
     color: inherit;
     text-decoration: none;
 }
 
-.container {
-    background-color: #e2e2e2;
-    padding: .4em 1.8em 1.8em;
-}
-
-.logo {
-    margin-top: 20px;
-    width: 50px;
-    border-radius: 1em;
-}
-
-.main-heading {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.5em;
-    color: black;
-    margin-top: 1.3em;
-    margin-bottom: 0;
-}
-
-.sub-heading {
-    font-size: .9em;
-    color: black;
-    margin-top: .2em;
-}
-
 .project-category {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.6em;
+    font: 500 1.6em "Orbitron", sans-serif;
     color: darkgray;
     text-align: center;
 }
@@ -55,30 +60,38 @@ a, a:active, a:focus, a:hover, a:visited {
 }
 
 .project-url {
-    color: inherit;
-    font-size: .8em;
+    font-size: 0.8em;
 }
 
+
+/* Footer */
 footer {
     text-align: center;
     margin-top: 3em;
 }
 
+
+/* Breakpoint at 525px */
 @media screen and (min-width: 525px) {
+
+
+    /* Header */
     .logo {
         width: 100px;
     }
 
     .main-heading {
         font-size: 2.7em;
-        margin-top: .8em;
+        margin-top: 0.8em;
     }
 
     .sub-heading {
         font-size: 1.4em;
-        margin-top: .4em;
+        margin-top: 0.4em;
     }
 
+
+    /* Content */
     .project-category {
         font-size: 2.2em;
     }
@@ -90,13 +103,20 @@ footer {
     .project-url {
         font-size: 1.1em;
     }
+}
 
+
+/* Breakpoint at 768px */
 @media screen and (min-width: 768px) {
+
+
+    /* Container */
     .container {
-        margin-top: 2em;
-        margin-bottom: 2em;
+        margin: 2em auto;
     }
 
+
+    /* Content */
     .project-category {
         text-align: left;
     }

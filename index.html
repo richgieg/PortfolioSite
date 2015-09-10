@@ -9,35 +9,37 @@
         <link href='https://fonts.googleapis.com/css?family=Orbitron:400,500' rel='stylesheet'>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/styles.css">
-        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
         <div class="container">
-            <div class="row">
-                <header>
-                    <div class="col-xs-2">
-                        <picture>
-                            <source media="(max-width: 524px)"
-                                srcset="images/logo-50.jpg 1x,
-                                        images/logo-100.jpg 2x">
-                            <source media="(min-width: 525px)"
-                                srcset="images/logo-100.jpg 1x,
-                                        images/logo-200.jpg 2x">
-                            <img class="logo" src="images/logo-200.jpg" alt="">
-                        </picture>
-                    </div>
-                    <div class="col-xs-10 text-right text-uppercase">
-                        <h1 class="main-heading">Richard Gieg</h1>
-                        <h4 class="sub-heading">Software Engineer</h4>
-                    </div>
-                </header>
-            </div>
+
+            <!-- Site Header -->
+            <header class="row">
+                <div class="col-xs-2">
+                    <picture>
+                        <source media="(max-width: 524px)"
+                            srcset="images/logo-50.jpg 1x,
+                                    images/logo-100.jpg 2x">
+                        <source media="(min-width: 525px)"
+                            srcset="images/logo-100.jpg 1x,
+                                    images/logo-200.jpg 2x">
+                        <img class="logo" src="images/logo-200.jpg" alt="My profile picture">
+                    </picture>
+                </div>
+                <div class="col-xs-10 text-right text-uppercase">
+                    <h1 class="main-heading">Richard Gieg</h1>
+                    <h4 class="sub-heading">Software Engineer</h4>
+                </div>
+            </header>
             <div class="row">
                 <div class="col-md-12">
                     <hr>
                 </div>
             </div>
+
+            <!-- Banner -->
             <div class="row">
                 <div class="col-md-12">
                     <picture>
@@ -54,7 +56,7 @@
                             srcset="images/banner_full-1200_largest_1x.jpg 1x,
                                     images/banner_full-2400_largest_2x.jpg 2x">
                         <img class="img-responsive" src="images/banner_full-2400_largest_2x.jpg"
-                            alt="Banner image containing various source code snippets">
+                            alt="Banner collage consisting of source code snippets">
                     </picture>
                 </div>
             </div>
@@ -63,216 +65,224 @@
                     <hr>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="project-category">Udacity Front-End Projects</h2>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-sm-6 col-md-4 project-info">
-                    <picture>
-                        <source media="(max-width: 524px)"
-                            srcset="images/u_fe_p01-478_medium_1x.jpg 1x,
-                                    images/u_fe_p01-956_medium_2x.jpg 2x">
-                        <source media="(min-width: 525px) and (max-width: 767px)"
-                            srcset="images/u_fe_p01-720_large_1x.jpg 1x,
-                                    images/u_fe_p01-1440_large_2x.jpg 2x">
-                        <source media="(min-width: 768px)"
-                            srcset="images/u_fe_p01-360_small_1x.jpg 1x,
-                                    images/u_fe_p01-720_small_2x.jpg 2x">
-                        <img class="img-responsive" src="images/u_fe_p01-1440_large_2x.jpg"
-                            alt="Source code and main window of my Portfolio Site project"
-                            data-toggle="modal" data-target="#portfoliosite">
-                    </picture>
-                    <h3 class="project-title">PortfolioSite</h3>
-                    <a class="project-url"
-                        href="http://github.com/richgieg/PortfolioSite"
-                        target="_blank">
-                        http://github.com/richgieg/PortfolioSite
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4 project-info">
-                    <picture>
-                        <source media="(max-width: 524px)"
-                            srcset="images/u_fe_p02-478_medium_1x.jpg 1x,
-                                    images/u_fe_p02-956_medium_2x.jpg 2x">
-                        <source media="(min-width: 525px) and (max-width: 767px)"
-                            srcset="images/u_fe_p02-720_large_1x.jpg 1x,
-                                    images/u_fe_p02-1440_large_2x.jpg 2x">
-                        <source media="(min-width: 768px)"
-                            srcset="images/u_fe_p02-360_small_1x.jpg 1x,
-                                    images/u_fe_p02-720_small_2x.jpg 2x">
-                        <img class="img-responsive" src="images/u_fe_p02-1440_large_2x.jpg"
-                            alt="Screenshot of online resume project description page">
-                    </picture>
-                    <h3 class="project-title">Online Resume</h3>
-                    <p class="project-url">Not yet started</p>
-                </div>
-                <div class="col-sm-6 col-md-4 project-info">
-                    <picture>
-                        <source media="(max-width: 524px)"
-                            srcset="images/u_fe_p03-478_medium_1x.jpg 1x,
-                                    images/u_fe_p03-956_medium_2x.jpg 2x">
-                        <source media="(min-width: 525px) and (max-width: 767px)"
-                            srcset="images/u_fe_p03-720_large_1x.jpg 1x,
-                                    images/u_fe_p03-1440_large_2x.jpg 2x">
-                        <source media="(min-width: 768px)"
-                            srcset="images/u_fe_p03-360_small_1x.jpg 1x,
-                                    images/u_fe_p03-720_small_2x.jpg 2x">
-                        <img class="img-responsive" src="images/u_fe_p03-1440_large_2x.jpg"
-                            alt="Screenshot of arcade game project description page">
-                    </picture>
-                    <h3 class="project-title">Arcade Game</h3>
-                    <p class="project-url">Not yet started</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="project-category">Udacity Full-Stack Projects</h2>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-sm-6 col-md-4 project-info">
-                    <picture>
-                        <source media="(max-width: 524px)"
-                            srcset="images/u_fs_p01-478_medium_1x.jpg 1x,
-                                    images/u_fs_p01-956_medium_2x.jpg 2x">
-                        <source media="(min-width: 525px) and (max-width: 767px)"
-                            srcset="images/u_fs_p01-720_large_1x.jpg 1x,
-                                    images/u_fs_p01-1440_large_2x.jpg 2x">
-                        <source media="(min-width: 768px)"
-                            srcset="images/u_fs_p01-360_small_1x.jpg 1x,
-                                    images/u_fs_p01-720_small_2x.jpg 2x">
-                        <img class="img-responsive" src="images/u_fs_p01-1440_large_2x.jpg"
-                            alt="Source code and main page of my Movie Trailer Website project"
-                            data-toggle="modal" data-target="#movietrailerwebsite">
-                    </picture>
-                    <h3 class="project-title">MovieTrailerWebsite</h3>
-                    <a class="project-url"
-                        href="http://github.com/richgieg/MovieTrailerWebsite"
-                        target="_blank">
-                        http://github.com/richgieg/MovieTrailerWebsite
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4 project-info">
-                    <picture>
-                        <source media="(max-width: 524px)"
-                            srcset="images/u_fs_p02-478_medium_1x.jpg 1x,
-                                    images/u_fs_p02-956_medium_2x.jpg 2x">
-                        <source media="(min-width: 525px) and (max-width: 767px)"
-                            srcset="images/u_fs_p02-720_large_1x.jpg 1x,
-                                    images/u_fs_p02-1440_large_2x.jpg 2x">
-                        <source media="(min-width: 768px)"
-                            srcset="images/u_fs_p02-360_small_1x.jpg 1x,
-                                    images/u_fs_p02-720_small_2x.jpg 2x">
-                        <img class="img-responsive" src="images/u_fs_p02-1440_large_2x.jpg"
-                            alt="Screenshot of tournament results project description page">
-                    </picture>
-                    <h3 class="project-title">Tournament Results</h3>
-                    <p class="project-url">Not yet started</p>
-                </div>
-                <div class="col-sm-6 col-md-4 project-info">
-                    <picture>
-                        <source media="(max-width: 524px)"
-                            srcset="images/u_fs_p03-478_medium_1x.jpg 1x,
-                                    images/u_fs_p03-956_medium_2x.jpg 2x">
-                        <source media="(min-width: 525px) and (max-width: 767px)"
-                            srcset="images/u_fs_p03-720_large_1x.jpg 1x,
-                                    images/u_fs_p03-1440_large_2x.jpg 2x">
-                        <source media="(min-width: 768px)"
-                            srcset="images/u_fs_p03-360_small_1x.jpg 1x,
-                                    images/u_fs_p03-720_small_2x.jpg 2x">
-                        <img class="img-responsive" src="images/u_fs_p03-1440_large_2x.jpg"
-                            alt="Screenshot of item catalog project description page">
-                    </picture>
-                    <h3 class="project-title">Item Catalog</h3>
-                    <p class="project-url">Not yet started</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="project-category">Personal Projects</h2>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-sm-6 project-info">
-                    <picture>
-                        <source media="(max-width: 524px)"
-                            srcset="images/p_richos-478_small_1x.jpg 1x,
-                                    images/p_richos-956_small_2x.jpg 2x">
-                        <source media="(min-width: 525px) and (max-width: 767px)"
-                            srcset="images/p_richos-720_large_1x.jpg 1x,
-                                    images/p_richos-1440_large_2x.jpg 2x">
-                        <source media="(min-width: 768px) and (max-width: 1199px)"
-                            srcset="images/p_richos-478_small_1x.jpg 1x,
-                                    images/p_richos-956_small_2x.jpg 2x">
-                        <source media="(min-width: 1200px)"
-                            srcset="images/p_richos-555_medium_1x.jpg 1x,
-                                    images/p_richos-1110_medium_2x.jpg 2x">
-                        <img class="img-responsive" src="images/p_richos-1440_large_2x.jpg"
-                            alt="Source code and a virtual machine running the RichOS operating system"
-                            data-toggle="modal" data-target="#richos">
-                    </picture>
-                    <h3 class="project-title">RichOS</h3>
-                    <a class="project-url"
-                        href="http://github.com/richgieg/RichOS"
-                        target="_blank">
-                        http://github.com/richgieg/RichOS
-                    </a>
-                </div>
-                <div class="col-sm-6 project-info">
-                    <picture>
-                        <source media="(max-width: 524px)"
-                            srcset="images/p_richemu-478_small_1x.jpg 1x,
-                                    images/p_richemu-956_small_2x.jpg 2x">
-                        <source media="(min-width: 525px) and (max-width: 767px)"
-                            srcset="images/p_richemu-720_large_1x.jpg 1x,
-                                    images/p_richemu-1440_large_2x.jpg 2x">
-                        <source media="(min-width: 768px) and (max-width: 1199px)"
-                            srcset="images/p_richemu-478_small_1x.jpg 1x,
-                                    images/p_richemu-956_small_2x.jpg 2x">
-                        <source media="(min-width: 1200px)"
-                            srcset="images/p_richemu-555_medium_1x.jpg 1x,
-                                    images/p_richemu-1110_medium_2x.jpg 2x">
-                        <img class="img-responsive" src="images/p_richemu-1440_large_2x.jpg"
-                            alt="Source code and a window showing text output of the RichEmu86 emulator"
-                            data-toggle="modal" data-target="#richemu86">
-                    </picture>
-                    <h3 class="project-title">RichEmu86</h3>
-                    <a class="project-url"
-                        href="http://github.com/richgieg/RichEmu86"
-                        target="_blank">
-                        http://github.com/richgieg/RichEmu86
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <footer>
-                        <hr>
-                        &copy; 2015 Richard Gieg
-                    </footer>
-                </div>
-            </div>
-        </div>
-        <!-- Modal -->
-        <div class="modal" id="portfoliosite" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="myModalLabel">PortfolioSite</h4>
-                        <h5>Project #1 for Udacity's Front-End Web Developer Nanodegree</h5>
+
+            <!-- Udacity Front-End projects section -->
+            <section>
+                <header class="row">
+                    <div class="col-md-12">
+                        <h2 class="project-category">Udacity Front-End Projects</h2>
                     </div>
+                </header>
+                <div class="row text-center">
+                    <div class="col-sm-6 col-md-4 project-info">
+                        <picture>
+                            <source media="(max-width: 524px)"
+                                srcset="images/u_fe_p01-478_medium_1x.jpg 1x,
+                                        images/u_fe_p01-956_medium_2x.jpg 2x">
+                            <source media="(min-width: 525px) and (max-width: 767px)"
+                                srcset="images/u_fe_p01-720_large_1x.jpg 1x,
+                                        images/u_fe_p01-1440_large_2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="images/u_fe_p01-360_small_1x.jpg 1x,
+                                        images/u_fe_p01-720_small_2x.jpg 2x">
+                            <img class="img-responsive" src="images/u_fe_p01-1440_large_2x.jpg"
+                                alt="Source code and main window of my Portfolio Site project"
+                                data-toggle="modal" data-target="#portfolio-site">
+                        </picture>
+                        <h3 class="project-title">Portfolio Site</h3>
+                        <a class="project-url" href="http://github.com/richgieg/PortfolioSite" target="_blank">
+                            http://github.com/richgieg/PortfolioSite
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 project-info">
+                        <picture>
+                            <source media="(max-width: 524px)"
+                                srcset="images/u_fe_p02-478_medium_1x.jpg 1x,
+                                        images/u_fe_p02-956_medium_2x.jpg 2x">
+                            <source media="(min-width: 525px) and (max-width: 767px)"
+                                srcset="images/u_fe_p02-720_large_1x.jpg 1x,
+                                        images/u_fe_p02-1440_large_2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="images/u_fe_p02-360_small_1x.jpg 1x,
+                                        images/u_fe_p02-720_small_2x.jpg 2x">
+                            <img class="img-responsive" src="images/u_fe_p02-1440_large_2x.jpg"
+                                alt="Screenshot of online resume project description page">
+                        </picture>
+                        <h3 class="project-title">Online Resume</h3>
+                        <p class="project-url">Not yet started</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 project-info">
+                        <picture>
+                            <source media="(max-width: 524px)"
+                                srcset="images/u_fe_p03-478_medium_1x.jpg 1x,
+                                        images/u_fe_p03-956_medium_2x.jpg 2x">
+                            <source media="(min-width: 525px) and (max-width: 767px)"
+                                srcset="images/u_fe_p03-720_large_1x.jpg 1x,
+                                        images/u_fe_p03-1440_large_2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="images/u_fe_p03-360_small_1x.jpg 1x,
+                                        images/u_fe_p03-720_small_2x.jpg 2x">
+                            <img class="img-responsive" src="images/u_fe_p03-1440_large_2x.jpg"
+                                alt="Screenshot of arcade game project description page">
+                        </picture>
+                        <h3 class="project-title">Arcade Game</h3>
+                        <p class="project-url">Not yet started</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Udacity Full-Stack projects section -->
+            <section>
+                <header class="row">
+                    <div class="col-md-12">
+                        <h2 class="project-category">Udacity Full-Stack Projects</h2>
+                    </div>
+                </header>
+                <div class="row text-center">
+                    <div class="col-sm-6 col-md-4 project-info">
+                        <picture>
+                            <source media="(max-width: 524px)"
+                                srcset="images/u_fs_p01-478_medium_1x.jpg 1x,
+                                        images/u_fs_p01-956_medium_2x.jpg 2x">
+                            <source media="(min-width: 525px) and (max-width: 767px)"
+                                srcset="images/u_fs_p01-720_large_1x.jpg 1x,
+                                        images/u_fs_p01-1440_large_2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="images/u_fs_p01-360_small_1x.jpg 1x,
+                                        images/u_fs_p01-720_small_2x.jpg 2x">
+                            <img class="img-responsive" src="images/u_fs_p01-1440_large_2x.jpg"
+                                alt="Source code and main page of my Movie Trailer Website project"
+                                data-toggle="modal" data-target="#movie-trailer-website">
+                        </picture>
+                        <h3 class="project-title">Movie Trailer Website</h3>
+                        <a class="project-url" href="http://github.com/richgieg/MovieTrailerWebsite" target="_blank">
+                            http://github.com/richgieg/MovieTrailerWebsite
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 project-info">
+                        <picture>
+                            <source media="(max-width: 524px)"
+                                srcset="images/u_fs_p02-478_medium_1x.jpg 1x,
+                                        images/u_fs_p02-956_medium_2x.jpg 2x">
+                            <source media="(min-width: 525px) and (max-width: 767px)"
+                                srcset="images/u_fs_p02-720_large_1x.jpg 1x,
+                                        images/u_fs_p02-1440_large_2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="images/u_fs_p02-360_small_1x.jpg 1x,
+                                        images/u_fs_p02-720_small_2x.jpg 2x">
+                            <img class="img-responsive" src="images/u_fs_p02-1440_large_2x.jpg"
+                                alt="Screenshot of tournament results project description page">
+                        </picture>
+                        <h3 class="project-title">Tournament Results</h3>
+                        <p class="project-url">Not yet started</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 project-info">
+                        <picture>
+                            <source media="(max-width: 524px)"
+                                srcset="images/u_fs_p03-478_medium_1x.jpg 1x,
+                                        images/u_fs_p03-956_medium_2x.jpg 2x">
+                            <source media="(min-width: 525px) and (max-width: 767px)"
+                                srcset="images/u_fs_p03-720_large_1x.jpg 1x,
+                                        images/u_fs_p03-1440_large_2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="images/u_fs_p03-360_small_1x.jpg 1x,
+                                        images/u_fs_p03-720_small_2x.jpg 2x">
+                            <img class="img-responsive" src="images/u_fs_p03-1440_large_2x.jpg"
+                                alt="Screenshot of item catalog project description page">
+                        </picture>
+                        <h3 class="project-title">Item Catalog</h3>
+                        <p class="project-url">Not yet started</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Personal projects section -->
+            <section>
+                <header class="row">
+                    <div class="col-md-12">
+                        <h2 class="project-category">Personal Projects</h2>
+                    </div>
+                </header>
+                <div class="row text-center">
+                    <div class="col-sm-6 project-info">
+                        <picture>
+                            <source media="(max-width: 524px)"
+                                srcset="images/p_richos-478_small_1x.jpg 1x,
+                                        images/p_richos-956_small_2x.jpg 2x">
+                            <source media="(min-width: 525px) and (max-width: 767px)"
+                                srcset="images/p_richos-720_large_1x.jpg 1x,
+                                        images/p_richos-1440_large_2x.jpg 2x">
+                            <source media="(min-width: 768px) and (max-width: 1199px)"
+                                srcset="images/p_richos-478_small_1x.jpg 1x,
+                                        images/p_richos-956_small_2x.jpg 2x">
+                            <source media="(min-width: 1200px)"
+                                srcset="images/p_richos-555_medium_1x.jpg 1x,
+                                        images/p_richos-1110_medium_2x.jpg 2x">
+                            <img class="img-responsive" src="images/p_richos-1440_large_2x.jpg"
+                                alt="Source code and a virtual machine running the RichOS operating system"
+                                data-toggle="modal" data-target="#richos">
+                        </picture>
+                        <h3 class="project-title">RichOS</h3>
+                        <a class="project-url" href="http://github.com/richgieg/RichOS" target="_blank">
+                            http://github.com/richgieg/RichOS
+                        </a>
+                    </div>
+                    <div class="col-sm-6 project-info">
+                        <picture>
+                            <source media="(max-width: 524px)"
+                                srcset="images/p_richemu-478_small_1x.jpg 1x,
+                                        images/p_richemu-956_small_2x.jpg 2x">
+                            <source media="(min-width: 525px) and (max-width: 767px)"
+                                srcset="images/p_richemu-720_large_1x.jpg 1x,
+                                        images/p_richemu-1440_large_2x.jpg 2x">
+                            <source media="(min-width: 768px) and (max-width: 1199px)"
+                                srcset="images/p_richemu-478_small_1x.jpg 1x,
+                                        images/p_richemu-956_small_2x.jpg 2x">
+                            <source media="(min-width: 1200px)"
+                                srcset="images/p_richemu-555_medium_1x.jpg 1x,
+                                        images/p_richemu-1110_medium_2x.jpg 2x">
+                            <img class="img-responsive" src="images/p_richemu-1440_large_2x.jpg"
+                                alt="Source code and a window showing text output of the RichEmu86 emulator"
+                                data-toggle="modal" data-target="#richemu86">
+                        </picture>
+                        <h3 class="project-title">RichEmu86</h3>
+                        <a class="project-url" href="http://github.com/richgieg/RichEmu86" target="_blank">
+                            http://github.com/richgieg/RichEmu86
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Site Footer -->
+            <footer class="row main-footer">
+                <div class="col-md-12 text-center">
+                    <hr>
+                    © 2015 Richard Gieg
+                </div>
+            </footer>
+        </div>
+
+        <!-- Portfolio Site modal -->
+        <div class="modal" id="portfolio-site" tabindex="-1" role="dialog"
+            aria-labelledby="portfolio-site-modal-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <section class="modal-content">
+                    <header class="modal-header">
+                        <h4 class="modal-title" id="portfolio-site-modal-label">
+                            Portfolio Site
+                        </h4>
+                        <h5>Project #1 for Udacity's Front-End Web Developer Nanodegree</h5>
+                    </header>
                     <div class="modal-body">
                         <picture>
                             <source media="(max-width: 524px)"
@@ -309,23 +319,30 @@
                             and behave as well on mobile devices as they
                             do on the desktop.
                         </p>
-                        <a href="http://github.com/richgieg/PortfolioSite"
-                            target="_blank">Check it out on GitHub!</a>
+                        <a href="http://github.com/richgieg/PortfolioSite" target="_blank">
+                            Check it out on GitHub!
+                        </a>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            Close
+                        </button>
+                    </footer>
+                </section>
             </div>
         </div>
-        <!-- Modal -->
-        <div class="modal" id="movietrailerwebsite" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <!-- Movie Trailer Website modal -->
+        <div class="modal" id="movie-trailer-website" tabindex="-1" role="dialog"
+            aria-labelledby="movie-trailer-website-modal-label" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="myModalLabel">MovieTrailerWebsite</h4>
+                <section class="modal-content">
+                    <header class="modal-header">
+                        <h4 class="modal-title" id="movie-trailer-website-modal-label">
+                            Movie Trailer Website
+                        </h4>
                         <h5>Project #1 for Udacity's Full-Stack Web Developer Nanodegree</h5>
-                    </div>
+                    </header>
                     <div class="modal-body">
                         <picture>
                             <source media="(max-width: 524px)"
@@ -360,23 +377,28 @@
                             ability to design and build python programs that
                             make use of the object oriented paradigm.
                         </p>
-                        <a href="http://github.com/richgieg/MovieTrailerWebsite"
-                            target="_blank">Check it out on GitHub!</a>
+                        <a href="http://github.com/richgieg/MovieTrailerWebsite" target="_blank">
+                            Check it out on GitHub!
+                        </a>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            Close
+                        </button>
+                    </footer>
+                </section>
             </div>
         </div>
-        <!-- Modal -->
-        <div class="modal" id="richos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <!-- RichOS modal -->
+        <div class="modal" id="richos" tabindex="-1" role="dialog"
+            aria-labelledby="richos-modal-label" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="myModalLabel">RichOS</h4>
+                <section class="modal-content">
+                    <header class="modal-header">
+                        <h4 class="modal-title" id="richos-modal-label">RichOS</h4>
                         <h5>A hobby operating system for the x86 architecture PC</h5>
-                    </div>
+                    </header>
                     <div class="modal-body">
                         <picture>
                             <source media="(max-width: 524px)"
@@ -460,24 +482,28 @@
                                 of a JavaScript interpreter as the sole API for
                                 applications</li>
                         </ul>
-                        </p>
-                        <a href="http://github.com/richgieg/RichOS"
-                            target="_blank">Check it out on GitHub!</a>
+                        <a href="http://github.com/richgieg/RichOS" target="_blank">
+                            Check it out on GitHub!
+                        </a>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            Close
+                        </button>
+                    </footer>
+                </section>
             </div>
         </div>
-        <!-- Modal -->
-        <div class="modal" id="richemu86" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <!-- RichEmu86 modal -->
+        <div class="modal" id="richemu86" tabindex="-1" role="dialog"
+            aria-labelledby="richemu86-modal-label" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="myModalLabel">RichEmu86</h4>
+                <section class="modal-content">
+                    <header class="modal-header">
+                        <h4 class="modal-title" id="richemu86-modal-label">RichEmu86</h4>
                         <h5>Emulator for the x86 architecture PC written in Python</h5>
-                    </div>
+                    </header>
                     <div class="modal-body">
                         <picture>
                             <source media="(max-width: 524px)"
@@ -511,13 +537,16 @@
                             Programming: An Introduction to Computer Science"
                             (Franklin, Beedle &amp; Associates).
                         </p>
-                        <a href="http://github.com/richgieg/RichEmu86"
-                            target="_blank">Check it out on GitHub!</a>
+                        <a href="http://github.com/richgieg/RichEmu86" target="_blank">
+                            Check it out on GitHub!
+                        </a>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            Close
+                        </button>
+                    </footer>
+                </section>
             </div>
         </div>
     </body>

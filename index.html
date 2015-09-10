@@ -360,6 +360,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title" id="myModalLabel">RichOS</h4>
+                        <h5>A hobby operating system for the x86 architecture PC</h5>
                     </div>
                     <div class="modal-body">
                         <picture>
@@ -371,8 +372,79 @@
                                         images/p_richos-1440_large_2x.jpg 2x">
                             <img class="img-responsive" src="images/p_richos-1440_large_2x.jpg"
                                 alt="Source code and a virtual machine running the RichOS operating system">
-                        </picture>
-                        A hobby operating system for the x86 architecture PC.
+                        </picture><br>
+                        <p>
+                            I started this project so I have a playground to
+                            exercise my problem solving skills and grow my
+                            computer science knowledge. I really enjoy writing
+                            low-level software like this. I'm still learning and
+                            I'm not exactly a whiz at it yet, but there's a
+                            unique feeling that comes along with knowing my code
+                            is the only code running on the CPU. Not Windows,
+                            not Linux, just RichOS. Sure, it's reinventing the
+                            wheel... and call me crazy... but I think it's
+                            really fun!
+                        </p>
+                        <p>
+                            This project is in its very early stages at this
+                            time. Here are some points of interest:
+                        </p>
+                        <ul>
+                            <li>My development environment is Ubuntu 15.04
+                                x86-64</li>
+                            <li>NASM, GCC, ld, and objcopy are all required to
+                                build the OS</li>
+                            <li>Upon successful execution of the build script
+                                (build.sh) there will be a flat binary file
+                                bin/richos.flp</li>
+                            <li>I test RichOS using VMware Player, pointing the
+                                virtual floppy drive to bin/richos.flp</li>
+                            <li>I also test RichOS on a physical machine by
+                                writing bin/richos.flp to a USB flash drive,
+                                starting at the first sector, then setting my PC
+                                to boot from the USB flash drive in floppy
+                                emulation mode</li>
+                            <li>The boot code is written in mostly 16-bit x86
+                                assembly with a small portion of 32-bit x86
+                                assembly to do some environment setup after
+                                switching the CPU from real mode to protected
+                                mode</li>
+                            <li>The kernel code is written in C, compiled to
+                                32-bit x86 machine code</li>
+                            <li>NASM is used to assemble the boot code and GCC
+                                is used to compile the kernel</li>
+                            <li>Some code in src/boot/bootsect.asm and
+                                src/boot/setup.asm borrows heavily from early
+                                Linux boot code, but the rest is original</li>
+                            <li>All code in src/kernel/ is original, including
+                                my (very incomplete) version of the C standard
+                                library</li>
+                        </ul>
+                        <p>
+                            Goals for the near future:
+                        </p>
+                        <ul>
+                            <li>Complete the parts of the C standard library
+                                that are most useful to the kernel</li>
+                            <li>Create basic memory management services</li>
+                            <li>Write basic interrupt service routines and
+                                populate interrupt descriptor table</li>
+                            <li>Create a driver for the keyboard</li>
+                        </ul>
+                        <p>
+                            Goals for the distant future:
+                        </p>
+                        <ul>
+                            <li>Create drivers for the floppy disk drive and
+                                hard disk drive</li>
+                            <li>Engineer a custom file system, or create a
+                                driver for an existing one</li>
+                            <li>Create memory management system utilizing paged
+                                virtual memory</li>
+                            <li>Implement an experimental user mode consisting
+                                of a JavaScript interpreter as the sole API for
+                                applications</li>
+                        </ul>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

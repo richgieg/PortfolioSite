@@ -2,6 +2,7 @@ body {
     font-family: 'Lato', sans-serif;
     color: #747704;
     font-weight: 300;
+    padding-bottom: 3em;
 }
 
 .text-muted {
@@ -81,10 +82,10 @@ body {
     }
 
     .project-info {
-        margin-top: .8em;
+        margin-top: 1.8em;
     }
 
     .project-info:first-child {
-        margin-top: .8em;
+        margin-top: 1.8em;
     }
 }

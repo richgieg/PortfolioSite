@@ -104,10 +104,13 @@
                                 srcset="images/u_fe_p02-360_small_1x.jpg 1x,
                                         images/u_fe_p02-720_small_2x.jpg 2x">
                             <img class="img-responsive" src="images/u_fe_p02-1440_large_2x.jpg"
-                                alt="Screenshot of online resume project description page">
+                                alt="Source code and main window of my Online Resume project"
+                                data-toggle="modal" data-target="#online-resume">
                         </picture>
                         <h3 class="project-title">Online Resume</h3>
-                        <p class="project-url">Not yet started</p>
+                        <a class="project-url" href="http://github.com/richgieg/OnlineResume" target="_blank">
+                            http://github.com/richgieg/OnlineResume
+                        </a>
                     </div>
                     <div class="col-sm-6 col-md-4 project-info">
                         <picture>
@@ -318,6 +321,61 @@
                             do on the desktop.
                         </p>
                         <a href="http://github.com/richgieg/PortfolioSite" target="_blank">
+                            Check it out on GitHub!
+                        </a>
+                    </div>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            Close
+                        </button>
+                    </footer>
+                </section>
+            </div>
+        </div>
+
+        <!-- Online Resume modal -->
+        <div class="modal" id="online-resume" tabindex="-1" role="dialog"
+            aria-labelledby="online-resume-modal-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <section class="modal-content">
+                    <header class="modal-header">
+                        <h4 class="modal-title" id="online-resume-modal-label">
+                            Online Resume
+                        </h4>
+                        <h5>Project #2 for Udacity's Front-End Web Developer Nanodegree</h5>
+                    </header>
+                    <div class="modal-body">
+                        <picture>
+                            <source media="(max-width: 524px)"
+                                srcset="images/u_fe_p02-478_medium_1x.jpg 1x,
+                                        images/u_fe_p02-956_medium_2x.jpg 2x">
+                            <source media="(min-width: 525px)"
+                                srcset="images/u_fe_p02-720_large_1x.jpg 1x,
+                                        images/u_fe_p02-1440_large_2x.jpg 2x">
+                            <img class="img-responsive" src="images/u_fe_p02-1440_large_2x.jpg"
+                                alt="Source code and main window of my Online Resume project">
+                        </picture><br>
+                        <p>
+                            The focus of this project is JavaScript and jQuery.
+                            To prepare myself I worked through Udacity's
+                            "JavaScript Basics" and "Intro to jQuery" courses.
+                            By completing these courses I learned how to do the
+                            following:
+                        </p>
+                        <ul>
+                            <li>Use proper JavaScript syntax</li>
+                            <li>Utilize jQuery to interact with the DOM</li>
+                            <li>Build a web page dynamically with JavaScript and jQuery</li>
+                            <li>Adapt to JavaScript coding conventions</li>
+                            <li>Display a Google map on a web page</li>
+                        </ul>
+                        <p>
+                            Working through this project enabled me to
+                            demonstrate my ability to interact with the DOM
+                            and render web page content dynamically using
+                            JavaScript and jQuery.
+                        </p>
+                        <a href="http://github.com/richgieg/OnlineResume" target="_blank">
                             Check it out on GitHub!
                         </a>
                     </div>

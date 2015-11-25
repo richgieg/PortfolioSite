@@ -102,6 +102,10 @@ a:visited {
     .project-url {
         font-size: 1.1em;
     }
+
+    .modal-body {
+        font-size: 1.2em;
+    }
 }
 
 
@@ -113,7 +117,6 @@ a:visited {
     .container {
         margin: 2em auto;
     }
-
 
     /* Content */
     .project-category {

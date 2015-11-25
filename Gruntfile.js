@@ -93,7 +93,7 @@ module.exports = function(grunt) {
         }]
       },
 
-      udacity_projects: {
+      projects: {
         options: {
           engine: 'im',
           sizes: [{
@@ -125,45 +125,7 @@ module.exports = function(grunt) {
 
         files: [{
           expand: true,
-          src: ['u_*.{gif,jpg,png}'],
-          cwd: 'images_src/',
-          dest: 'images/'
-        }]
-      },
-
-      personal_projects: {
-        options: {
-          engine: 'im',
-          sizes: [{
-            width: 1440,
-            suffix: '_large_2x',
-            quality: 60
-          },{
-            width: 720,
-            suffix: '_large_1x',
-            quality: 60
-          },{
-            width: 1110,
-            suffix: '_medium_2x',
-            quality: 60
-          },{
-            width: 555,
-            suffix: '_medium_1x',
-            quality: 60
-          },{
-            width: 956,
-            suffix: '_small_2x',
-            quality: 60
-          },{
-            width: 478,
-            suffix: '_small_1x',
-            quality: 60
-          }]
-        },
-
-        files: [{
-          expand: true,
-          src: ['p_*.{gif,jpg,png}'],
+          src: ['u_*.{gif,jpg,png}', 'p_*.{gif,jpg,png}'],
           cwd: 'images_src/',
           dest: 'images/'
         }]

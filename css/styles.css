@@ -13,7 +13,7 @@ body {
 
 /* Header */
 .logo {
-    width: 50px;
+    width: 80px;
     border-radius: 1em;
     margin-top: 20px;
 }
@@ -28,6 +28,10 @@ body {
     font-size: 0.9em;
     color: black;
     margin-top: 0.2em;
+}
+
+.sm-links {
+    text-transform: none;
 }
 
 

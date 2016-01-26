@@ -12,6 +12,15 @@ body {
 
 
 /* Header */
+.head {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    padding-bottom: 1.2em;
+    margin-top: 0.3em;
+}
+
 .logo {
     width: 80px;
     border-radius: 1em;
@@ -20,7 +29,7 @@ body {
 
 .main-heading {
     font: 400 1.5em "Orbitron", sans-serif;
-    color: black;
+    color: #f0f8ff;
     margin: 1.3em 0 0;
 }
 

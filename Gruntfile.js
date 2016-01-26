@@ -1,14 +1,48 @@
-/*
- After you have changed the settings under responsive_images
- run this with one of these options:
-  "grunt" alone creates a new, completed images directory
-  "grunt clean" removes the images directory
-  "grunt responsive_images" re-processes images without removing the old ones
-*/
-
 module.exports = function(grunt) {
+  var devImgSrc = 'images_src/';
+  var devImgDest = 'src/images/';
+  var src = 'src/';
+  var dest = 'dist/';
 
   grunt.initConfig({
+
+    clean: {
+      dev: {
+        src: [devImgDest]
+      },
+
+      prod: {
+        src: [dest]
+      }
+    },
+
+    mkdir: {
+      dev: {
+        options: {
+          create: [devImgDest]
+        },
+      },
+
+      prod: {
+        options: {
+          create: [dest]
+        },
+      }
+    },
+
+  copy: {
+    prod: {
+      files: [
+        {
+          expand: true,
+          cwd: src,
+          src: ['**'],
+          dest: dest
+        },
+      ],
+    },
+  },
+
     responsive_images: {
       logo: {
         options: {
@@ -28,8 +62,8 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           src: ['logo.{gif,jpg,png}'],
-          cwd: 'images_src/',
-          dest: 'images/'
+          cwd: devImgSrc,
+          dest: devImgDest
         }]
       },
 
@@ -58,8 +92,8 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           src: ['banner_full.{gif,jpg,png}'],
-          cwd: 'images_src/',
-          dest: 'images/'
+          cwd: devImgSrc,
+          dest: devImgDest
         }]
       },
 
@@ -88,8 +122,8 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           src: ['banner_cropped.{gif,jpg,png}'],
-          cwd: 'images_src/',
-          dest: 'images/'
+          cwd: devImgSrc,
+          dest: devImgDest
         }]
       },
 
@@ -126,34 +160,20 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           src: ['u_*.{gif,jpg,png}', 'p_*.{gif,jpg,png}'],
-          cwd: 'images_src/',
-          dest: 'images/'
+          cwd: devImgSrc,
+          dest: devImgDest
         }]
       }
     },
 
-    /* Clear out the images directory if it exists */
-    clean: {
-      dev: {
-        src: ['images'],
-      },
-    },
-
-    /* Generate the images directory if it is missing */
-    mkdir: {
-      dev: {
-        options: {
-          create: ['images']
-        },
-      },
-    },
-
   });
 
-  grunt.loadNpmTasks('grunt-responsive-images');
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-mkdir');
-  grunt.registerTask('default', ['clean', 'mkdir', 'responsive_images']);
+  grunt.loadNpmTasks('grunt-responsive-images');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
+  grunt.registerTask('dev', ['clean:dev', 'mkdir:dev', 'responsive_images']);
+  grunt.registerTask('prod', ['clean:prod', 'copy:prod']);
+  grunt.registerTask('default', ['dev', 'prod']);
 };

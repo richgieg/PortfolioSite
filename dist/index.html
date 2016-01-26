@@ -114,6 +114,34 @@
                         </p>
                     </div>
 
+                    <!-- Neighborhood Map section -->
+                    <div class="col-sm-6 col-md-4 project-info">
+                        <a href="#" data-toggle="modal" data-target="#neighborhood-map">
+                            <picture>
+                                <source media="(max-width: 524px)"
+                                    srcset="images/u_fe_p05-478_medium_1x.jpg 1x,
+                                            images/u_fe_p05-956_medium_2x.jpg 2x">
+                                <source media="(min-width: 525px) and (max-width: 767px)"
+                                    srcset="images/u_fe_p05-720_large_1x.jpg 1x,
+                                            images/u_fe_p05-1440_large_2x.jpg 2x">
+                                <source media="(min-width: 768px)"
+                                    srcset="images/u_fe_p05-360_small_1x.jpg 1x,
+                                            images/u_fe_p05-720_small_2x.jpg 2x">
+                                <img class="img-responsive" src="images/u_fe_p05-1440_large_2x.jpg"
+                                    alt="Screenshot of the main page of my Neighborhood Map project">
+                            </picture>
+                        </a>
+                        <h3 class="project-title">Neighborhood Map</h3>
+                        <p class="project-url">
+                            <a href="#" data-toggle="modal"
+                                    data-target="#neighborhood-map">Info</a> //
+                            <a href="http://www.richgieg.com/neighborhood-map/"
+                                    target="_blank">Live</a> //
+                            <a href="http://github.com/richgieg/NeighborhoodMap"
+                                    target="_blank">GitHub</a>
+                        </p>
+                    </div>
+
                     <!-- Arcade Game section -->
                     <div class="col-sm-6 col-md-4 project-info">
                         <a href="#" data-toggle="modal" data-target="#arcade-game">
@@ -349,6 +377,78 @@
                             above tools in order to create websites that look
                             and behave as well on mobile devices as they
                             do on the desktop.
+                        </p>
+                    </div>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            Close
+                        </button>
+                    </footer>
+                </section>
+            </div>
+        </div>
+
+        <!-- Neighborhood Map modal -->
+        <div class="modal" id="neighborhood-map" tabindex="-1" role="dialog"
+            aria-labelledby="neighborhood-map-modal-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <section class="modal-content">
+                    <header class="modal-header">
+                        <h4 class="modal-title" id="neighborhood-map-modal-label">
+                            Neighborhood Map
+                        </h4>
+                        <h5>Project #5 for Udacity's Front-End Web Developer Nanodegree</h5>
+                    </header>
+                    <div class="modal-body">
+                        <picture>
+                            <source media="(max-width: 524px)"
+                                srcset="images/u_fe_p05-478_medium_1x.jpg 1x,
+                                        images/u_fe_p05-956_medium_2x.jpg 2x">
+                            <source media="(min-width: 525px)"
+                                srcset="images/u_fe_p05-720_large_1x.jpg 1x,
+                                        images/u_fe_p05-1440_large_2x.jpg 2x">
+                            <img class="img-responsive" src="images/u_fe_p05-1440_large_2x.jpg"
+                                alt="Screenshot of the main page of my Neighborhood Map project">
+                        </picture><br>
+                        <p>
+                            Before setting out to complete this project I took
+                            two Udacity JavaScript courses: "Intro to AJAX" and
+                            "JavaScript Design Patterns". Throughout these
+                            courses I learned how to fetch data asynchonously
+                            from an API server as well as how to implement
+                            design patterns to ensure the maintainability of
+                            front-end code. The Neighborhood Map project gave
+                            me a chance to apply my new knowledge and skills
+                            in order to create a single-page web application
+                            featuring a Google Map containing markers for
+                            New York City subway stations. The app features a
+                            list of NYC subway stations, which can be filtered.
+                            As they are filtered, the map's markers are updated
+                            as well. When a map's marker is clicked, an info
+                            window pops up, which displays a list of routes that
+                            are associated with the station, as well as images
+                            from Flickr that are geotagged within 1 km of the
+                            station. By completing the two previously-mentioned
+                            courses and this project, I learned how to do the
+                            following:
+                        </p>
+                        <ul>
+                            <li>Retrieve data from an API asynchronously with AJAX</li>
+                            <li>Handle errors that can occur with AJAX calls</li>
+                            <li>Separate concerns by following an MVC, MVP, or MVVM pattern</li>
+                            <li>Employ the Knockout.js framework for automatic DOM manipulation</li>
+                            <li>Utilize object-oriented design principles and patterns</li>
+                            <li>Render an app responsively to handle various screen sizes</li>
+                        </ul>
+                        <p>
+                            Completing this project has allowed me to
+                            demonstrate my ability to utilize AJAX to interact
+                            with APIs, follow design patterns to create logical
+                            and maintainable front-end code, as well as employ
+                            the Knockout.js framework to create rich user
+                            experiences. To check out the app in action,
+                            <a href="http://www.richgieg.com/neighborhood-map/"
+                                    target="_blank">click here</a>!
                         </p>
                     </div>
                     <footer class="modal-footer">

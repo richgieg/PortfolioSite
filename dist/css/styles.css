@@ -80,6 +80,10 @@ a:visited {
     color: #444;
 }
 
+.modal-dialog a {
+    text-decoration: underline;
+}
+
 
 /* Footer */
 .main-footer {
